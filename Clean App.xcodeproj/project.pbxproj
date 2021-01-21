@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2563D1C725BA207C009504A7 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */; };
+		2563D1D025BA2127009504A7 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */; };
 		2581639325B9CA0C00C9D394 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639225B9CA0C00C9D394 /* ExtensionHelpers.swift */; };
 		2581639825B9D39200C9D394 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		2581639E25B9D3DD00C9D394 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639D25B9D3DD00C9D394 /* TestFactories.swift */; };
@@ -92,6 +93,7 @@
 
 /* Begin PBXFileReference section */
 		2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		2581639225B9CA0C00C9D394 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		2581639725B9D39200C9D394 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		2581639D25B9D3DD00C9D394 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
@@ -170,6 +172,15 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		2563D1CE25BA210D009504A7 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				258163C025B9EDDE00C9D394 /* AlamofireAdapterTests.swift */,
+				2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		2581639125B9C9F900C9D394 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +219,7 @@
 		258163BF25B9EDDE00C9D394 /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
-				258163C025B9EDDE00C9D394 /* AlamofireAdapterTests.swift */,
+				2563D1CE25BA210D009504A7 /* Http */,
 				258163C225B9EDDE00C9D394 /* Info.plist */,
 			);
 			path = InfraTests;
@@ -562,6 +573,7 @@
 				258163C125B9EDDE00C9D394 /* AlamofireAdapterTests.swift in Sources */,
 				258163E325B9EEE500C9D394 /* AccountModelFactory.swift in Sources */,
 				258163DB25B9EEDD00C9D394 /* TestExtensions.swift in Sources */,
+				2563D1D025BA2127009504A7 /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
