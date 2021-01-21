@@ -65,7 +65,6 @@ class AlamofireAdapterTests: XCTestCase {
  valido
  
  ok ok x
- x x ok
  
  invalido
  ok ok ok
@@ -88,14 +87,17 @@ extension AlamofireAdapterTests {
     
     func testRequestFor(url: URL = makeUrl(), data: Data?, completion: @escaping (URLRequest) -> Void) {
         let sut = makeSut()
-        sut.post(to: url, with: data, completion: {_ in})
-        
         let exp = expectation(description: "waiting")
-        UrlProtocolStub.observerRequest { request in
-            completion(request)
+        
+        var request: URLRequest?
+        
+        sut.post(to: url, with: data) { _ in
             exp.fulfill()
         }
+        
+        UrlProtocolStub.observerRequest { request = $0 }
         wait(for: [exp], timeout: 1)
+        completion(request!)
     }
 }
 
