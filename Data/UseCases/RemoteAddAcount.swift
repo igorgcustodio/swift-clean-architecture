@@ -23,7 +23,7 @@ public final class RemoteAddAcount: AddAcount {
             guard self != nil else { return }
             switch result {
             case .success(let data):
-                if let model: AccountModel = data.toModel() {
+                if let model: AccountModel = data?.toModel() {
                     completion(.success(model))
                 } else {
                     completion(.failure(.unexpected))
