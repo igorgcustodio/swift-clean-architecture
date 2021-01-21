@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		258163A925B9D46C00C9D394 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258163A825B9D46C00C9D394 /* AccountModelFactory.swift */; };
 		258163BC25B9EDDE00C9D394 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258163B325B9EDDE00C9D394 /* Infra.framework */; };
 		258163C125B9EDDE00C9D394 /* AlamofireAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258163C025B9EDDE00C9D394 /* AlamofireAdapterTests.swift */; };
+		258163D625B9EEB600C9D394 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACCF3425B7896D002D0757 /* Data.framework */; };
+		258163D725B9EEB600C9D394 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACCF3425B7896D002D0757 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		258163DB25B9EEDD00C9D394 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
+		258163DF25B9EEE100C9D394 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639D25B9D3DD00C9D394 /* TestFactories.swift */; };
+		258163E325B9EEE500C9D394 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258163A825B9D46C00C9D394 /* AccountModelFactory.swift */; };
+		258163E925B9F04500C9D394 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 258163E825B9F04500C9D394 /* Alamofire */; };
 		25ACCF2925B7854A002D0757 /* AddAcount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ACCF2825B7854A002D0757 /* AddAcount.swift */; };
 		25ACCF2C25B786B5002D0757 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ACCF2B25B786B5002D0757 /* AccountModel.swift */; };
 		25ACCF3D25B7896D002D0757 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACCF3425B7896D002D0757 /* Data.framework */; };
@@ -35,6 +41,13 @@
 			remoteGlobalIDString = 258163B225B9EDDE00C9D394;
 			remoteInfo = Infra;
 		};
+		258163D825B9EEB600C9D394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25ACCEF925B783B9002D0757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25ACCF3325B7896D002D0757;
+			remoteInfo = Data;
+		};
 		25ACCF3E25B7896D002D0757 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 25ACCEF925B783B9002D0757 /* Project object */;
@@ -52,6 +65,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		258163DA25B9EEB600C9D394 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				258163D725B9EEB600C9D394 /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		25ACCF5625B789F5002D0757 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258163D625B9EEB600C9D394 /* Data.framework in Frameworks */,
+				258163E925B9F04500C9D394 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +353,17 @@
 				258163AF25B9EDDE00C9D394 /* Sources */,
 				258163B025B9EDDE00C9D394 /* Frameworks */,
 				258163B125B9EDDE00C9D394 /* Resources */,
+				258163DA25B9EEB600C9D394 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				258163D925B9EEB600C9D394 /* PBXTargetDependency */,
 			);
 			name = Infra;
+			packageProductDependencies = (
+				258163E825B9F04500C9D394 /* Alamofire */,
+			);
 			productName = Infra;
 			productReference = 258163B325B9EDDE00C9D394 /* Infra.framework */;
 			productType = "com.apple.product-type.framework";
@@ -448,6 +479,9 @@
 				Base,
 			);
 			mainGroup = 25ACCEF825B783B9002D0757;
+			packageReferences = (
+				258163E725B9F04500C9D394 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 25ACCF0225B783B9002D0757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -511,7 +545,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258163DF25B9EEE100C9D394 /* TestFactories.swift in Sources */,
 				258163C125B9EDDE00C9D394 /* AlamofireAdapterTests.swift in Sources */,
+				258163E325B9EEE500C9D394 /* AccountModelFactory.swift in Sources */,
+				258163DB25B9EEDD00C9D394 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +593,11 @@
 			isa = PBXTargetDependency;
 			target = 258163B225B9EDDE00C9D394 /* Infra */;
 			targetProxy = 258163BD25B9EDDE00C9D394 /* PBXContainerItemProxy */;
+		};
+		258163D925B9EEB600C9D394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25ACCF3325B7896D002D0757 /* Data */;
+			targetProxy = 258163D825B9EEB600C9D394 /* PBXContainerItemProxy */;
 		};
 		25ACCF3F25B7896D002D0757 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1006,6 +1048,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		258163E725B9F04500C9D394 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		258163E825B9F04500C9D394 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 258163E725B9F04500C9D394 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25ACCEF925B783B9002D0757 /* Project object */;
 }
