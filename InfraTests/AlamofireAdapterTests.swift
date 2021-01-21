@@ -22,7 +22,7 @@ class AlamofireAdapter {
 
 class AlamofireAdapterTests: XCTestCase {
 
-    func test_() throws {
+    func test_post_should_make_request_with_valid_urland_method() throws {
         let url = makeUrl()
         let configuration = URLSessionConfiguration.default
         configuration.protocolClasses = [UrlProtocolStub.self]
