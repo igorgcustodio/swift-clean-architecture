@@ -63,8 +63,8 @@ class RemoteAddAcountTests: XCTestCase {
 
 // MARK: Helpers
 extension RemoteAddAcountTests {
-    func makeAddAccountModel() -> AddAcountModel {
-        return AddAcountModel(name: "any_name", email: "any_email@mail.com", password: "any_password", passwordConfirmation: "any_password")
+    func makeAddAccountModel() -> AddAccountModel {
+        return AddAccountModel(name: "any_name", email: "any_email@mail.com", password: "any_password", passwordConfirmation: "any_password")
     }
     
     func makeSut(url: URL = URL(string: "http://any-url.com")!, file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteAddAcount, httpClientSpy: HttpClientSpy) {

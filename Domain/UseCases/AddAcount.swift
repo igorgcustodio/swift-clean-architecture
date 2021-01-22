@@ -8,10 +8,10 @@
 import Foundation
 
 public protocol AddAcount {
-    func add(addAcountModel: AddAcountModel, completion: @escaping (Result<AccountModel, DomainError>) -> Void)
+    func add(addAccountModel: AddAccountModel, completion: @escaping (Result<AccountModel, DomainError>) -> Void)
 }
 
-public struct AddAcountModel: Model {
+public struct AddAccountModel: Model {
     public var name: String
     public var email: String
     public var password: String
