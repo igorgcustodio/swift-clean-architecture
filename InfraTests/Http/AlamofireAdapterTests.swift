@@ -40,7 +40,7 @@ class AlamofireAdapterTests: XCTestCase {
         expectResult(.failure(.noConnectivity), when: (nil, nil, nil))
     }
     
-    func test_post_should_complete_with_error_when_request_completes_with_200() throws {
+    func test_post_should_complete_with_data_when_request_completes_with_200() throws {
         expectResult(.success(makeValidData()), when: (makeValidData(), makeHttpResponse(), nil))
     }
     
@@ -94,8 +94,12 @@ extension AlamofireAdapterTests {
         let exp = expectation(description: "waiting")
         sut.post(to: makeUrl(), with: makeValidData()) { receivedResult in
             switch (expectedResult, receivedResult) {
-            case (.success(let expectedData), .success(let receivedData)): XCTAssertEqual(expectedData, receivedData, file: file, line: line)
-            case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError, file: file, line: line)
+            case (.success(let expectedData), .success(let receivedData)):
+                XCTAssertEqual(expectedData, receivedData, file: file, line: line)
+                
+            case (.failure(let expectedError), .failure(let receivedError)):
+                XCTAssertEqual(expectedError, receivedError, file: file, line: line)
+                
             default:
                 XCTFail("Expected \(expectedResult) received \(receivedResult)", file: file, line: line)
             }

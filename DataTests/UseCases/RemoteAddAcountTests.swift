@@ -15,14 +15,14 @@ class RemoteAddAcountTests: XCTestCase {
         let url = makeUrl()
         let (sut, httpClientSpy) = makeSut(url: url)
         
-        sut.add(addAcountModel: makeAddAccountModel()) { _ in }
+        sut.add(addAccountModel: makeAddAccountModel()) { _ in }
         XCTAssertEqual(httpClientSpy.urls, [url])
     }
     
     func test_add_should_call_http_client_with_correct_data() throws {
         let (sut, httpClientSpy) = makeSut()
         let addAcountModel = makeAddAccountModel()
-        sut.add(addAcountModel: makeAddAccountModel()) { _ in }
+        sut.add(addAccountModel: makeAddAccountModel()) { _ in }
         
         XCTAssertEqual(httpClientSpy.data, addAcountModel.toData())
     }
@@ -54,7 +54,7 @@ class RemoteAddAcountTests: XCTestCase {
         let httpClientSpy = HttpClientSpy()
         var sut: RemoteAddAcount? = RemoteAddAcount(url: makeUrl(), httpClient: httpClientSpy)
         var result: Result<AccountModel, DomainError>?
-        sut?.add(addAcountModel: makeAddAccountModel(), completion: { result = $0 })
+        sut?.add(addAccountModel: makeAddAccountModel(), completion: { result = $0 })
         sut = nil
         httpClientSpy.completeWithError(.noConnectivity)
         XCTAssertNil(result)
@@ -77,7 +77,7 @@ extension RemoteAddAcountTests {
     
     func expect(_ sut: RemoteAddAcount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         let exp = expectation(description: "waiting")
-        sut.add(addAcountModel: makeAddAccountModel()) { receivedResult in
+        sut.add(addAccountModel: makeAddAccountModel()) { receivedResult in
             switch (expectedResult, receivedResult) {
             case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError, file: file, line: line)
             case (.success(let expectedAccount), .success(let receivedAccount)): XCTAssertEqual(expectedAccount, receivedAccount, file: file, line: line)
