@@ -16,14 +16,22 @@ class SignUpPresenter {
     }
     
     func signUp(viewModel: SignUpViewModel) {
+        if let message = validate(viewModel: viewModel) {
+            self.alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
+        }
+    }
+    
+    private func validate(viewModel: SignUpViewModel) -> String? {
         if viewModel.name == nil || viewModel.name!.isEmpty {
-            self.alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "Nome é obrigatório"))
+            return "Nome é obrigatório"
         } else if viewModel.email == nil || viewModel.email!.isEmpty {
-            self.alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "Email é obrigatório"))
+            return "Email é obrigatório"
         } else if viewModel.password == nil || viewModel.password!.isEmpty {
-            self.alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "Senha é obrigatória"))
+            return "Senha é obrigatória"
         } else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
-            self.alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "Confirmar senha é obrigatório"))
+            return "Confirmar senha é obrigatório"
+        } else {
+            return nil
         }
     }
 }
