@@ -11,9 +11,21 @@ import Presentation
 final class SignUpViewController: UIViewController {
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    var signUp: ((SignUpViewModel) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
+    }
+    
+    private func configure() {
+        saveButton.addTarget(self, action: #selector(saveButtonTapper), for: .touchUpInside)
+    }
+    
+    @objc private func saveButtonTapper() {
+        signUp?(SignUpViewModel(name: nil, email: nil, password: nil, passwordConfirmation: nil))
     }
 }
 
