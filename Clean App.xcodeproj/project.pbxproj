@@ -25,6 +25,8 @@
 		257FFE1625C0B8D600453BD2 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FFE1525C0B8D600453BD2 /* SignUpViewControllerTests.swift */; };
 		257FFE3B25C0B9D800453BD2 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A8D29025BF8AC000E7ACEC /* Presentation.framework */; };
 		257FFE3C25C0B9D800453BD2 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25A8D29025BF8AC000E7ACEC /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		257FFE6525C0BBC100453BD2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FFE6425C0BBC100453BD2 /* SignUpViewController.swift */; };
+		257FFE6D25C0BBEB00453BD2 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257FFE6C25C0BBEB00453BD2 /* SignUp.storyboard */; };
 		2581639325B9CA0C00C9D394 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639225B9CA0C00C9D394 /* ExtensionHelpers.swift */; };
 		2581639825B9D39200C9D394 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		2581639E25B9D3DD00C9D394 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639D25B9D3DD00C9D394 /* TestFactories.swift */; };
@@ -203,6 +205,8 @@
 		257FFE1025C0B8D600453BD2 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257FFE1525C0B8D600453BD2 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		257FFE1725C0B8D600453BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		257FFE6425C0BBC100453BD2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		257FFE6C25C0BBEB00453BD2 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		2581639225B9CA0C00C9D394 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		2581639725B9D39200C9D394 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		2581639D25B9D3DD00C9D394 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
@@ -402,6 +406,8 @@
 			isa = PBXGroup;
 			children = (
 				257FFE0B25C0B8D600453BD2 /* Info.plist */,
+				257FFE6425C0BBC100453BD2 /* SignUpViewController.swift */,
+				257FFE6C25C0BBEB00453BD2 /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -889,6 +895,7 @@
 					};
 					257FFE0725C0B8D600453BD2 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					257FFE0F25C0B8D600453BD2 = {
 						CreatedOnToolsVersion = 12.3;
@@ -962,6 +969,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257FFE6D25C0BBEB00453BD2 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,6 +1044,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257FFE6525C0BBC100453BD2 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,6 +1243,7 @@
 		257FFE1A25C0B8D600453BD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1254,6 +1264,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1263,6 +1274,7 @@
 		257FFE1B25C0B8D600453BD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1292,6 +1304,7 @@
 		257FFE1D25C0B8D600453BD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UITests/Info.plist;
@@ -1312,6 +1325,7 @@
 		257FFE1E25C0B8D600453BD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UITests/Info.plist;
