@@ -12,6 +12,7 @@
 		2563D1DE25BA34DC009504A7 /* AddAcountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1DD25BA34DC009504A7 /* AddAcountIntegrationTests.swift */; };
 		2563D1E025BA34DC009504A7 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACCF3425B7896D002D0757 /* Data.framework */; };
 		257FFD8C25C04FA700453BD2 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258163A825B9D46C00C9D394 /* AccountModelFactory.swift */; };
+		257FFD9C25C05BED00453BD2 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		2581639325B9CA0C00C9D394 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639225B9CA0C00C9D394 /* ExtensionHelpers.swift */; };
 		2581639825B9D39200C9D394 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		2581639E25B9D3DD00C9D394 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639D25B9D3DD00C9D394 /* TestFactories.swift */; };
@@ -855,6 +856,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257FFD8C25C04FA700453BD2 /* AccountModelFactory.swift in Sources */,
+				257FFD9C25C05BED00453BD2 /* TestExtensions.swift in Sources */,
 				25A8D29E25BF8AC100E7ACEC /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
