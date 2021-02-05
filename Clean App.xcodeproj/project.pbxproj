@@ -325,6 +325,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2541392825CCC832006670B0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				257FFE6425C0BBC100453BD2 /* SignUpViewController.swift */,
+				257FFE6C25C0BBEB00453BD2 /* SignUp.storyboard */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2541392F25CCC83E006670B0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				257FFE1525C0B8D600453BD2 /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2541393C25CCC873006670B0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2541392825CCC832006670B0 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2541394325CCC87C006670B0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2541392F25CCC83E006670B0 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		2563D1C525BA2072009504A7 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,9 +438,8 @@
 		257FFE0925C0B8D600453BD2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2541393C25CCC873006670B0 /* Scenes */,
 				257FFE0B25C0B8D600453BD2 /* Info.plist */,
-				257FFE6425C0BBC100453BD2 /* SignUpViewController.swift */,
-				257FFE6C25C0BBEB00453BD2 /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -415,7 +447,7 @@
 		257FFE1425C0B8D600453BD2 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				257FFE1525C0B8D600453BD2 /* SignUpViewControllerTests.swift */,
+				2541394325CCC87C006670B0 /* Scenes */,
 				257FFE1725C0B8D600453BD2 /* Info.plist */,
 			);
 			path = UITests;
