@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2541395225CCC8BA006670B0 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541395125CCC8BA006670B0 /* TestExtensions.swift */; };
 		2563D1C725BA207C009504A7 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */; };
 		2563D1D025BA2127009504A7 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */; };
 		2563D1DE25BA34DC009504A7 /* AddAcountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1DD25BA34DC009504A7 /* AddAcountIntegrationTests.swift */; };
@@ -187,6 +188,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2541395125CCC8BA006670B0 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		2563D1DB25BA34DC009504A7 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -358,6 +360,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		2541395025CCC8A5006670B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2541395125CCC8BA006670B0 /* TestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2563D1C525BA2072009504A7 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +457,7 @@
 		257FFE1425C0B8D600453BD2 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				2541395025CCC8A5006670B0 /* Helpers */,
 				2541394325CCC87C006670B0 /* Scenes */,
 				257FFE1725C0B8D600453BD2 /* Info.plist */,
 			);
@@ -1085,6 +1096,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257FFE1625C0B8D600453BD2 /* SignUpViewControllerTests.swift in Sources */,
+				2541395225CCC8BA006670B0 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
