@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2541395225CCC8BA006670B0 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541395125CCC8BA006670B0 /* TestExtensions.swift */; };
+		2541396125CCD01B006670B0 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541396025CCD01B006670B0 /* UIViewControllerExtensions.swift */; };
 		2563D1C725BA207C009504A7 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */; };
 		2563D1D025BA2127009504A7 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */; };
 		2563D1DE25BA34DC009504A7 /* AddAcountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1DD25BA34DC009504A7 /* AddAcountIntegrationTests.swift */; };
@@ -189,6 +190,7 @@
 
 /* Begin PBXFileReference section */
 		2541395125CCC8BA006670B0 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		2541396025CCD01B006670B0 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		2563D1DB25BA34DC009504A7 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,6 +370,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		2541395F25CCCFFE006670B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2541396025CCD01B006670B0 /* UIViewControllerExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2563D1C525BA2072009504A7 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +458,7 @@
 		257FFE0925C0B8D600453BD2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2541395F25CCCFFE006670B0 /* Helpers */,
 				2541393C25CCC873006670B0 /* Scenes */,
 				257FFE0B25C0B8D600453BD2 /* Info.plist */,
 			);
@@ -1087,6 +1098,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2541396125CCD01B006670B0 /* UIViewControllerExtensions.swift in Sources */,
 				257FFE6525C0BBC100453BD2 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

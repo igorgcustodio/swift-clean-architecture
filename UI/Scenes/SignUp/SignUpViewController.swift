@@ -27,6 +27,7 @@ final class SignUpViewController: UIViewController {
     private func configure() {
         saveButton.addTarget(self, action: #selector(saveButtonTapper), for: .touchUpInside)
         saveButton.layer.cornerRadius = 5
+        hideKeyboardOnTap()
     }
     
     @objc private func saveButtonTapper() {
