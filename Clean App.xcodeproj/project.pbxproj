@@ -83,6 +83,10 @@
 		25B00FBD25CF1273005E8742 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B00FBC25CF1273005E8742 /* ControllerFactory.swift */; };
 		25B00FDA25CF19DE005E8742 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B00FD925CF19DE005E8742 /* UseCaseFactory.swift */; };
 		25B00FE625CF1BF2005E8742 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B00FE525CF1BF2005E8742 /* SignUpComposer.swift */; };
+		25B0100325CF1D51005E8742 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0100225CF1D51005E8742 /* SignUpIntegrationTests.swift */; };
+		25B0100D25CF1DB9005E8742 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FFDE325C0B63D00453BD2 /* AddAccountSpy.swift */; };
+		25B0101825CF1E03005E8742 /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0101725CF1E03005E8742 /* MainUITests.swift */; };
+		25B0102225CF1E29005E8742 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		25E492A825B8D1260030A347 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E492A725B8D1260030A347 /* HttpError.swift */; };
 /* End PBXBuildFile section */
 
@@ -384,6 +388,8 @@
 		25B00FBC25CF1273005E8742 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		25B00FD925CF19DE005E8742 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		25B00FE525CF1BF2005E8742 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
+		25B0100225CF1D51005E8742 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		25B0101725CF1E03005E8742 /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		25E492A725B8D1260030A347 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -933,6 +939,7 @@
 			isa = PBXGroup;
 			children = (
 				25B00F4925CF10E1005E8742 /* Info.plist */,
+				25B0100225CF1D51005E8742 /* SignUpIntegrationTests.swift */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -941,6 +948,7 @@
 			isa = PBXGroup;
 			children = (
 				25B00F5425CF10E1005E8742 /* Info.plist */,
+				25B0101725CF1E03005E8742 /* MainUITests.swift */,
 			);
 			path = MainUITests;
 			sourceTree = "<group>";
@@ -1357,10 +1365,12 @@
 					};
 					25B00F4225CF10E1005E8742 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 25B00F2D25CF10DF005E8742;
 					};
 					25B00F4D25CF10E1005E8742 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 25B00F2D25CF10DF005E8742;
 					};
 				};
@@ -1652,6 +1662,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B0100D25CF1DB9005E8742 /* AddAccountSpy.swift in Sources */,
+				25B0102225CF1E29005E8742 /* TestExtensions.swift in Sources */,
+				25B0100325CF1D51005E8742 /* SignUpIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1659,6 +1672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B0101825CF1E03005E8742 /* MainUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2571,6 +2585,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -2581,6 +2596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorgcustodio.MainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Main.app/Main";
@@ -2592,6 +2608,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -2612,6 +2629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -2622,6 +2640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorgcustodio.MainUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Main;
@@ -2632,6 +2651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
