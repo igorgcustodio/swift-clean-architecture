@@ -88,6 +88,7 @@
 		25B0102225CF1E29005E8742 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		25B0103725CF2190005E8742 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0103625CF2190005E8742 /* WeakVarProxy.swift */; };
 		25B0106925CF267F005E8742 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0106825CF267F005E8742 /* Environment.swift */; };
+		25B0108F25CF2F7F005E8742 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FFDF725C0B71F00453BD2 /* TestFactories.swift */; };
 		25E492A825B8D1260030A347 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E492A725B8D1260030A347 /* HttpError.swift */; };
 /* End PBXBuildFile section */
 
@@ -1696,6 +1697,7 @@
 			files = (
 				25B0100D25CF1DB9005E8742 /* AddAccountSpy.swift in Sources */,
 				25B0102225CF1E29005E8742 /* TestExtensions.swift in Sources */,
+				25B0108F25CF2F7F005E8742 /* TestFactories.swift in Sources */,
 				25B0100325CF1D51005E8742 /* SignUpComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
