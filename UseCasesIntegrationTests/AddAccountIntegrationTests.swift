@@ -10,7 +10,7 @@ import Domain
 import Data
 import Infra
 
-class AddAcountIntegrationTests: XCTestCase {
+class AddAccountIntegrationTests: XCTestCase {
     
     func test_add_acount() {
         let alamofireAdapter = AlamofireAdapter()

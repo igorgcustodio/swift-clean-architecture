@@ -16,7 +16,7 @@
 		254139B325CCD48E006670B0 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25A8D29025BF8AC000E7ACEC /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2563D1C725BA207C009504A7 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */; };
 		2563D1D025BA2127009504A7 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */; };
-		2563D1DE25BA34DC009504A7 /* AddAcountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1DD25BA34DC009504A7 /* AddAcountIntegrationTests.swift */; };
+		2563D1DE25BA34DC009504A7 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563D1DD25BA34DC009504A7 /* AddAccountIntegrationTests.swift */; };
 		2563D1E025BA34DC009504A7 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACCF3425B7896D002D0757 /* Data.framework */; };
 		2565C8A125D4B8F6008DC2EE /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565C8A025D4B8F6008DC2EE /* RequiredFieldValidationTests.swift */; };
 		2565C8B725D4BC4A008DC2EE /* RequiredFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565C8B625D4BC4A008DC2EE /* RequiredFieldValidator.swift */; };
@@ -360,7 +360,7 @@
 		2563D1C625BA207C009504A7 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		2563D1CF25BA2127009504A7 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		2563D1DB25BA34DC009504A7 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2563D1DD25BA34DC009504A7 /* AddAcountIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcountIntegrationTests.swift; sourceTree = "<group>"; };
+		2563D1DD25BA34DC009504A7 /* AddAccountIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountIntegrationTests.swift; sourceTree = "<group>"; };
 		2563D1DF25BA34DC009504A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2565C8A025D4B8F6008DC2EE /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		2565C8B625D4BC4A008DC2EE /* RequiredFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidator.swift; sourceTree = "<group>"; };
@@ -659,7 +659,7 @@
 		2563D1DC25BA34DC009504A7 /* UseCasesIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				2563D1DD25BA34DC009504A7 /* AddAcountIntegrationTests.swift */,
+				2563D1DD25BA34DC009504A7 /* AddAccountIntegrationTests.swift */,
 				2563D1DF25BA34DC009504A7 /* Info.plist */,
 			);
 			path = UseCasesIntegrationTests;
@@ -1698,7 +1698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2563D1DE25BA34DC009504A7 /* AddAcountIntegrationTests.swift in Sources */,
+				2563D1DE25BA34DC009504A7 /* AddAccountIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
