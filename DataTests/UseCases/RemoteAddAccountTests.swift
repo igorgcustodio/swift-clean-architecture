@@ -11,7 +11,7 @@ import Data
 
 class RemoteAddAccountTests: XCTestCase {
 
-    func test_add_should_call_http_client_with_correct_url() throws {
+    func test_add_should_call_http_client_with_correct_url() {
         let url = makeUrl()
         let (sut, httpClientSpy) = makeSut(url: url)
         
@@ -19,7 +19,7 @@ class RemoteAddAccountTests: XCTestCase {
         XCTAssertEqual(httpClientSpy.urls, [url])
     }
     
-    func test_add_should_call_http_client_with_correct_data() throws {
+    func test_add_should_call_http_client_with_correct_data()  {
         let (sut, httpClientSpy) = makeSut()
         let addAcountModel = makeAddAccountModel()
         sut.add(addAccountModel: makeAddAccountModel()) { _ in }
@@ -27,14 +27,21 @@ class RemoteAddAccountTests: XCTestCase {
         XCTAssertEqual(httpClientSpy.data, addAcountModel.toData())
     }
     
-    func test_add_should_complete_with_error_if_client_completes_with_error() throws {
+    func test_add_should_complete_with_error_if_client_completes_with_error() {
         let (sut, httpClientSpy) = makeSut()
         expect(sut, completeWith: .failure(.unexpected)) {
             httpClientSpy.completeWithError(.noConnectivity)
         }
     }
     
-    func test_add_should_complete_with_account_if_client_completes_with_valid_data() throws {
+    func test_add_should_complete_with_email_in_use_if_client_completes_with_forbidden() {
+        let (sut, httpClientSpy) = makeSut()
+        expect(sut, completeWith: .failure(.emailInUse)) {
+            httpClientSpy.completeWithError(.forbidden)
+        }
+    }
+    
+    func test_add_should_complete_with_account_if_client_completes_with_valid_data() {
         let (sut, httpClientSpy) = makeSut()
         let account = makeAccountModel()
         expect(sut, completeWith: .success(account)) {
@@ -42,7 +49,7 @@ class RemoteAddAccountTests: XCTestCase {
         }
     }
     
-    func test_add_should_complete_with_error_if_client_completes_with_invalid_data() throws {
+    func test_add_should_complete_with_error_if_client_completes_with_invalid_data() {
         let (sut, httpClientSpy) = makeSut()
         
         expect(sut, completeWith: .failure(.unexpected)) {
@@ -50,7 +57,7 @@ class RemoteAddAccountTests: XCTestCase {
         }
     }
     
-    func test_add_should_not_complete_if_sut_has_been_deallocated() throws {
+    func test_add_should_not_complete_if_sut_has_been_deallocated() {
         let httpClientSpy = HttpClientSpy()
         var sut: RemoteAddAccount? = RemoteAddAccount(url: makeUrl(), httpClient: httpClientSpy)
         var result: Result<AccountModel, DomainError>?

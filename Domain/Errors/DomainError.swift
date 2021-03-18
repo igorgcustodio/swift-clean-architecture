@@ -9,5 +9,5 @@ import Foundation
 
 public enum DomainError: Error {
     case unexpected
-    case parser
+    case emailInUse
 }
