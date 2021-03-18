@@ -42,37 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25ACCF3B25B7896D002D0757"
-               BuildableName = "DataTests.xctest"
-               BlueprintName = "DataTests"
-               ReferencedContainer = "container:Clean App.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "258163B225B9EDDE00C9D394"
                BuildableName = "Infra.framework"
                BlueprintName = "Infra"
-               ReferencedContainer = "container:Clean App.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "258163BA25B9EDDE00C9D394"
-               BuildableName = "InfraTests.xctest"
-               BlueprintName = "InfraTests"
                ReferencedContainer = "container:Clean App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -98,9 +70,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25A8D29725BF8AC100E7ACEC"
-               BuildableName = "PresentationTests.xctest"
-               BlueprintName = "PresentationTests"
+               BlueprintIdentifier = "2541397A25CCD418006670B0"
+               BuildableName = "Validation.framework"
+               BlueprintName = "Validation"
                ReferencedContainer = "container:Clean App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -111,39 +83,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      enableThreadSanitizer = "YES"
-      codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
-      <CodeCoverageTargets>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25ACCF3325B7896D002D0757"
-            BuildableName = "Data.framework"
-            BlueprintName = "Data"
-            ReferencedContainer = "container:Clean App.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25ACCF1D25B784A0002D0757"
-            BuildableName = "Domain.framework"
-            BlueprintName = "Domain"
-            ReferencedContainer = "container:Clean App.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "258163B225B9EDDE00C9D394"
-            BuildableName = "Infra.framework"
-            BlueprintName = "Infra"
-            ReferencedContainer = "container:Clean App.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25A8D28F25BF8AC000E7ACEC"
-            BuildableName = "Presentation.framework"
-            BlueprintName = "Presentation"
-            ReferencedContainer = "container:Clean App.xcodeproj">
-         </BuildableReference>
-      </CodeCoverageTargets>
+      enableThreadSanitizer = "YES">
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -183,42 +123,9 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2563D1DA25BA34DC009504A7"
-               BuildableName = "UseCasesIntegrationTests.xctest"
-               BlueprintName = "UseCasesIntegrationTests"
-               ReferencedContainer = "container:Clean App.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "2541398225CCD419006670B0"
                BuildableName = "ValidationTests.xctest"
                BlueprintName = "ValidationTests"
-               ReferencedContainer = "container:Clean App.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25B00F4225CF10E1005E8742"
-               BuildableName = "MainTests.xctest"
-               BlueprintName = "MainTests"
-               ReferencedContainer = "container:Clean App.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "257FFE0F25C0B8D600453BD2"
-               BuildableName = "UITests.xctest"
-               BlueprintName = "UITests"
                ReferencedContainer = "container:Clean App.xcodeproj">
             </BuildableReference>
          </TestableReference>
