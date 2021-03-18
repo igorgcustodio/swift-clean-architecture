@@ -15,8 +15,8 @@ class AddAccountIntegrationTests: XCTestCase {
     func test_add_acount() {
         let alamofireAdapter = AlamofireAdapter()
         let url = URL(string: "http://localhost:5050/api/signup")!
-        let sut = RemoteAddAcount(url: url, httpClient: alamofireAdapter)
-        let addAccountModel = AddAccountModel(name: "Rodrigo Manguinho", email: "rodrigo.manguinho@gmail.co", password: "secret", passwordConfirmation: "secret")
+        let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
+        let addAccountModel = AddAccountModel(name: "Rodrigo Manguinho", email: "\(UUID().uuidString)@gmail.com", password: "secret", passwordConfirmation: "secret")
         
         let exp = expectation(description: "waiting")
         
@@ -29,7 +29,20 @@ class AddAccountIntegrationTests: XCTestCase {
             }
             exp.fulfill()
         }
-        
         wait(for: [exp], timeout: 5)
+        
+        let exp2 = expectation(description: "waiting")
+        
+        sut.add(addAccountModel: addAccountModel) { result in
+            switch result {
+            case .failure(let error) where error == .emailInUse:
+                XCTAssertNotNil(error)
+            default:
+                XCTFail("Expect failure, got \(result)")
+            }
+            exp2.fulfill()
+        }
+        
+        wait(for: [exp2], timeout: 5)
     }
 }
