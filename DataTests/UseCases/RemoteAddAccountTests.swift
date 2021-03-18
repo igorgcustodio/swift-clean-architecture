@@ -9,7 +9,7 @@ import XCTest
 import Domain
 import Data
 
-class RemoteAddAcountTests: XCTestCase {
+class RemoteAddAccountTests: XCTestCase {
 
     func test_add_should_call_http_client_with_correct_url() throws {
         let url = makeUrl()
@@ -62,7 +62,7 @@ class RemoteAddAcountTests: XCTestCase {
 }
 
 // MARK: Helpers
-extension RemoteAddAcountTests {    
+extension RemoteAddAccountTests {    
     func makeSut(url: URL = URL(string: "http://any-url.com")!, file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteAddAccount, httpClientSpy: HttpClientSpy) {
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteAddAccount(url: url, httpClient: httpClientSpy)
