@@ -62,6 +62,7 @@
 		25818E852602F3ED00274636 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818E842602F3ED00274636 /* Color.swift */; };
 		25818E912602F4AF00274636 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818E902602F4AF00274636 /* RoundedTextField.swift */; };
 		25818EA52602F62900274636 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EA42602F62900274636 /* NavigationController.swift */; };
+		25818EB02604203100274636 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EAF2604203100274636 /* Authentication.swift */; };
 		25A8D29925BF8AC100E7ACEC /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A8D29025BF8AC000E7ACEC /* Presentation.framework */; };
 		25A8D29E25BF8AC100E7ACEC /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8D29D25BF8AC100E7ACEC /* SignUpPresenterTests.swift */; };
 		25A8D2C025BF97B300E7ACEC /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8D2BF25BF97B300E7ACEC /* SignUpPresenter.swift */; };
@@ -410,6 +411,7 @@
 		25818E842602F3ED00274636 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		25818E902602F4AF00274636 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		25818EA42602F62900274636 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		25818EAF2604203100274636 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		25A8D29025BF8AC000E7ACEC /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A8D29325BF8AC100E7ACEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25A8D29825BF8AC100E7ACEC /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1027,6 +1029,7 @@
 			isa = PBXGroup;
 			children = (
 				25ACCF2825B7854A002D0757 /* AddAccount.swift */,
+				25818EAF2604203100274636 /* Authentication.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1834,6 +1837,7 @@
 				25ACCF5C25B880C2002D0757 /* Model.swift in Sources */,
 				25ACCF2925B7854A002D0757 /* AddAccount.swift in Sources */,
 				25ACCF7225B8CF31002D0757 /* DomainError.swift in Sources */,
+				25818EB02604203100274636 /* Authentication.swift in Sources */,
 				25ACCF2C25B786B5002D0757 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
