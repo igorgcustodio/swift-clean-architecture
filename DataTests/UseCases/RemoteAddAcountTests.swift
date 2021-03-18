@@ -52,7 +52,7 @@ class RemoteAddAcountTests: XCTestCase {
     
     func test_add_should_not_complete_if_sut_has_been_deallocated() throws {
         let httpClientSpy = HttpClientSpy()
-        var sut: RemoteAddAcount? = RemoteAddAcount(url: makeUrl(), httpClient: httpClientSpy)
+        var sut: RemoteAddAccount? = RemoteAddAccount(url: makeUrl(), httpClient: httpClientSpy)
         var result: Result<AccountModel, DomainError>?
         sut?.add(addAccountModel: makeAddAccountModel(), completion: { result = $0 })
         sut = nil
@@ -63,15 +63,15 @@ class RemoteAddAcountTests: XCTestCase {
 
 // MARK: Helpers
 extension RemoteAddAcountTests {    
-    func makeSut(url: URL = URL(string: "http://any-url.com")!, file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteAddAcount, httpClientSpy: HttpClientSpy) {
+    func makeSut(url: URL = URL(string: "http://any-url.com")!, file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteAddAccount, httpClientSpy: HttpClientSpy) {
         let httpClientSpy = HttpClientSpy()
-        let sut = RemoteAddAcount(url: url, httpClient: httpClientSpy)
+        let sut = RemoteAddAccount(url: url, httpClient: httpClientSpy)
         checkMemoryLeak(for: sut, file: file, line: line)
         checkMemoryLeak(for: httpClientSpy, file: file, line: line)
         return (sut, httpClientSpy)
     }
     
-    func expect(_ sut: RemoteAddAcount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
+    func expect(_ sut: RemoteAddAccount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         let exp = expectation(description: "waiting")
         sut.add(addAccountModel: makeAddAccountModel()) { receivedResult in
             switch (expectedResult, receivedResult) {
