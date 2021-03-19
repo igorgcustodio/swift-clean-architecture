@@ -63,6 +63,8 @@
 		25818E912602F4AF00274636 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818E902602F4AF00274636 /* RoundedTextField.swift */; };
 		25818EA52602F62900274636 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EA42602F62900274636 /* NavigationController.swift */; };
 		25818EB02604203100274636 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EAF2604203100274636 /* Authentication.swift */; };
+		25818EBB2604213500274636 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */; };
+		25818ECF2604220500274636 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818ECE2604220500274636 /* RemoteAuthentication.swift */; };
 		25A8D29925BF8AC100E7ACEC /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A8D29025BF8AC000E7ACEC /* Presentation.framework */; };
 		25A8D29E25BF8AC100E7ACEC /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8D29D25BF8AC100E7ACEC /* SignUpPresenterTests.swift */; };
 		25A8D2C025BF97B300E7ACEC /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8D2BF25BF97B300E7ACEC /* SignUpPresenter.swift */; };
@@ -412,6 +414,8 @@
 		25818E902602F4AF00274636 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		25818EA42602F62900274636 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		25818EAF2604203100274636 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationTests.swift; sourceTree = "<group>"; };
+		25818ECE2604220500274636 /* RemoteAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
 		25A8D29025BF8AC000E7ACEC /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A8D29325BF8AC100E7ACEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25A8D29825BF8AC100E7ACEC /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1046,6 +1050,7 @@
 		25ACCF6B25B88207002D0757 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				25818ECE2604220500274636 /* RemoteAuthentication.swift */,
 				25ACCF5F25B88138002D0757 /* RemoteAddAccount.swift */,
 			);
 			path = UseCases;
@@ -1063,6 +1068,7 @@
 		25ACCF6D25B88228002D0757 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */,
 				25ACCF4125B7896D002D0757 /* RemoteAddAccountTests.swift */,
 			);
 			path = UseCases;
@@ -1850,6 +1856,7 @@
 				2581639325B9CA0C00C9D394 /* ExtensionHelpers.swift in Sources */,
 				25E492A825B8D1260030A347 /* HttpError.swift in Sources */,
 				25ACCF6025B88138002D0757 /* RemoteAddAccount.swift in Sources */,
+				25818ECF2604220500274636 /* RemoteAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1859,6 +1866,7 @@
 			files = (
 				2581639E25B9D3DD00C9D394 /* TestFactories.swift in Sources */,
 				258163A325B9D42500C9D394 /* HttpClientSpy.swift in Sources */,
+				25818EBB2604213500274636 /* RemoteAuthenticationTests.swift in Sources */,
 				25ACCF4225B7896D002D0757 /* RemoteAddAccountTests.swift in Sources */,
 				258163A925B9D46C00C9D394 /* AccountModelFactory.swift in Sources */,
 				2581639825B9D39200C9D394 /* TestExtensions.swift in Sources */,
