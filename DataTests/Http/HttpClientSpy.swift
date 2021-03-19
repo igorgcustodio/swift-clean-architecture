@@ -13,6 +13,9 @@ class HttpClientSpy: HttpPostClient {
     var data: Data?
     var completion: ((Result<Data?, HttpError>) -> Void)?
     
+    public init() {
+    }
+    
     func post(to url: URL, with data: Data?, completion: @escaping (Result<Data?, HttpError>) -> Void) {
         self.urls.append(url)
         self.data = data
