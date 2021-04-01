@@ -22,7 +22,13 @@ public final class RemoteAuthentication {
         httpClient.post(to: self.url, with: authenticationModel.toData()) { result in
             switch result {
             case .success: break
-            case .failure: completion(.failure(.unexpected))
+            case .failure(let error):
+                switch error {
+                case .unauthorized:
+                    completion(.failure(.expiredSession))
+                default:
+                    completion(.failure(.unexpected))
+                }
             }
         }
     }
