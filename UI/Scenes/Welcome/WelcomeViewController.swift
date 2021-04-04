@@ -13,6 +13,7 @@ class WelcomeViewController: UIViewController, Storyboard {
     @IBOutlet weak var signUpButton: UIButton!
     
     public var login: (() -> Void)?
+    public var signUp: (() -> Void)?
     
     override func viewDidLoad()  {
         super.viewDidLoad()
@@ -23,12 +24,15 @@ class WelcomeViewController: UIViewController, Storyboard {
         title = "4Dev"
         loginButton.layer.cornerRadius = 5
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
-        hideKeyboardOnTap()
+        signUpButton.layer.cornerRadius = 5
+        signUpButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
     @objc private func loginButtonTapped() {
         login?()
     }
+    
+    @objc private func signUpButtonTapped() {
+        signUp?()
+    }
 }
-
-// PAROU EM 15:08
