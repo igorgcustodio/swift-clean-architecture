@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25286FDD25D4D08300CA8747 /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FFDD625C0B61300453BD2 /* EmailValidatorSpy.swift */; };
-		2541395225CCC8BA006670B0 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541395125CCC8BA006670B0 /* TestExtensions.swift */; };
+		2541395225CCC8BA006670B0 /* UITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541395125CCC8BA006670B0 /* UITestExtensions.swift */; };
 		2541396125CCD01B006670B0 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541396025CCD01B006670B0 /* UIViewControllerExtensions.swift */; };
 		2541396F25CCD151006670B0 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541396E25CCD151006670B0 /* Storyboard.swift */; };
 		2541398425CCD419006670B0 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2541397B25CCD418006670B0 /* Validation.framework */; };
@@ -123,6 +123,7 @@
 		25DD1A85261976D20062A5D8 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD1A7A261974F00062A5D8 /* LoginViewControllerTests.swift */; };
 		25DD1A8F261976DE0062A5D8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DD1A6F261973F40062A5D8 /* Login.storyboard */; };
 		25DD1A99261976F60062A5D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD1A7B261975330062A5D8 /* LoginViewController.swift */; };
+		25DD1AC826197B1C0062A5D8 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581639725B9D39200C9D394 /* TestExtensions.swift */; };
 		25E492A825B8D1260030A347 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E492A725B8D1260030A347 /* HttpError.swift */; };
 /* End PBXBuildFile section */
 
@@ -366,7 +367,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2541395125CCC8BA006670B0 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		2541395125CCC8BA006670B0 /* UITestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestExtensions.swift; sourceTree = "<group>"; };
 		2541396025CCD01B006670B0 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		2541396E25CCD151006670B0 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		2541397B25CCD418006670B0 /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -642,7 +643,7 @@
 		2541395025CCC8A5006670B0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				2541395125CCC8BA006670B0 /* TestExtensions.swift */,
+				2541395125CCC8BA006670B0 /* UITestExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1841,7 +1842,8 @@
 			files = (
 				25DD1A85261976D20062A5D8 /* LoginViewControllerTests.swift in Sources */,
 				257FFE1625C0B8D600453BD2 /* SignUpViewControllerTests.swift in Sources */,
-				2541395225CCC8BA006670B0 /* TestExtensions.swift in Sources */,
+				2541395225CCC8BA006670B0 /* UITestExtensions.swift in Sources */,
+				25DD1AC826197B1C0062A5D8 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
