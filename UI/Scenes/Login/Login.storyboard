@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="DF4-fr-CSr">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BV6-jK-31i" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BV6-jK-31i" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t80-Jv-bSB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="rKf-qQ-nQb" id="iON-Wf-d8E"/>
-                        <outlet property="loadingIndicator" destination="ECe-bA-ceV" id="Xxp-19-c4m"/>
+                        <outlet property="loadingIndicator" destination="ECe-bA-ceV" id="pW5-cB-fwM"/>
                         <outlet property="passwordTextField" destination="cw3-6z-6LO" id="VOZ-oF-Nyq"/>
                         <outlet property="saveButton" destination="Fwf-d8-PBr" id="Xc6-M6-hpv"/>
                     </connections>
