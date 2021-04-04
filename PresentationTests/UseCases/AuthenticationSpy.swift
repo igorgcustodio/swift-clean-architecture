@@ -15,6 +15,7 @@ class AuthenticationSpy: Authentication {
     
     func auth(authenticationModel: AuthenticationModel, completion: @escaping (Authentication.Result) -> Void) {
         self.authenticationModel = authenticationModel
+        self.completion = completion
     }
     
     func completeWithError(_ error: DomainError) {
