@@ -65,6 +65,9 @@
 		25818EB02604203100274636 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EAF2604203100274636 /* Authentication.swift */; };
 		25818EBB2604213500274636 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */; };
 		25818ECF2604220500274636 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818ECE2604220500274636 /* RemoteAuthentication.swift */; };
+		25A32A63261A7EC30092A7A9 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */; };
+		25A32A77261A81A60092A7A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */; };
+		25A32A93261A85950092A7A9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A32A57261A72630092A7A9 /* Welcome.storyboard */; };
 		25A8D29925BF8AC100E7ACEC /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A8D29025BF8AC000E7ACEC /* Presentation.framework */; };
 		25A8D29E25BF8AC100E7ACEC /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8D29D25BF8AC100E7ACEC /* SignUpPresenterTests.swift */; };
 		25A8D2C025BF97B300E7ACEC /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8D2BF25BF97B300E7ACEC /* SignUpPresenter.swift */; };
@@ -428,6 +431,9 @@
 		25818EAF2604203100274636 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationTests.swift; sourceTree = "<group>"; };
 		25818ECE2604220500274636 /* RemoteAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
+		25A32A57261A72630092A7A9 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
+		25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		25A8D29025BF8AC000E7ACEC /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A8D29325BF8AC100E7ACEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25A8D29825BF8AC100E7ACEC /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -631,6 +637,7 @@
 		2541393C25CCC873006670B0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				25A32A56261A724C0092A7A9 /* Welcome */,
 				25DD1A6E261973EB0062A5D8 /* Login */,
 				2541392825CCC832006670B0 /* SignUp */,
 			);
@@ -640,6 +647,7 @@
 		2541394325CCC87C006670B0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				25A32A61261A7EA90092A7A9 /* Welcome */,
 				25DD1A79261974EB0062A5D8 /* Login */,
 				2541392F25CCC83E006670B0 /* SignUp */,
 			);
@@ -912,6 +920,23 @@
 				25818EA42602F62900274636 /* NavigationController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		25A32A56261A724C0092A7A9 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				25A32A57261A72630092A7A9 /* Welcome.storyboard */,
+				25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		25A32A61261A7EA90092A7A9 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		25A8D29125BF8AC100E7ACEC /* Presentation */ = {
@@ -1709,6 +1734,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257FFE6D25C0BBEB00453BD2 /* SignUp.storyboard in Resources */,
+				25A32A93261A85950092A7A9 /* Welcome.storyboard in Resources */,
 				25818E6F2602EF0B00274636 /* Images.xcassets in Resources */,
 				25DD1A8F261976DE0062A5D8 /* Login.storyboard in Resources */,
 			);
@@ -1834,6 +1860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A32A77261A81A60092A7A9 /* WelcomeViewController.swift in Sources */,
 				2541396125CCD01B006670B0 /* UIViewControllerExtensions.swift in Sources */,
 				25818E912602F4AF00274636 /* RoundedTextField.swift in Sources */,
 				2541396F25CCD151006670B0 /* Storyboard.swift in Sources */,
@@ -1851,6 +1878,7 @@
 			files = (
 				25DD1A85261976D20062A5D8 /* LoginViewControllerTests.swift in Sources */,
 				257FFE1625C0B8D600453BD2 /* SignUpViewControllerTests.swift in Sources */,
+				25A32A63261A7EC30092A7A9 /* WelcomeViewControllerTests.swift in Sources */,
 				2541395225CCC8BA006670B0 /* UITestExtensions.swift in Sources */,
 				25DD1AC826197B1C0062A5D8 /* TestExtensions.swift in Sources */,
 			);
