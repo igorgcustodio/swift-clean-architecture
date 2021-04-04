@@ -24,3 +24,15 @@ public final class LoginViewController: UIViewController, Storyboard {
         hideKeyboardOnTap()
     }
 }
+
+extension LoginViewController: LoadingView {
+    public func display(viewModel: LoadingViewModel) {
+        if viewModel.isLoading {
+            view.isUserInteractionEnabled = false
+            self.loadingIndicator.startAnimating()
+        } else {
+            view.isUserInteractionEnabled = true
+            self.loadingIndicator.stopAnimating()
+        }
+    }
+}

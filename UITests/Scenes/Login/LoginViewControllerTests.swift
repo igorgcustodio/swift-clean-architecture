@@ -24,7 +24,6 @@ class LoginViewControllerTests: XCTestCase {
 extension LoginViewControllerTests {
     func makeSut() -> LoginViewController {
         let sut = LoginViewController.instantiate()
-        sut.signUp = signUpSpy
         sut.loadViewIfNeeded()
         return sut
     }
