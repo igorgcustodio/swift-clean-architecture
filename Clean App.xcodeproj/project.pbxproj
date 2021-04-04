@@ -467,6 +467,7 @@
 		25D8F82826168AE40022B848 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		25DD1A3C26195FBA0062A5D8 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		25DD1A50261962AE0062A5D8 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
+		25DD1A6F261973F40062A5D8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		25E492A725B8D1260030A347 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -618,6 +619,7 @@
 		2541393C25CCC873006670B0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				25DD1A6E261973EB0062A5D8 /* Login */,
 				2541392825CCC832006670B0 /* SignUp */,
 			);
 			path = Scenes;
@@ -1201,6 +1203,14 @@
 			isa = PBXGroup;
 			children = (
 				25D8F814261688200022B848 /* LoginPresenterTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		25DD1A6E261973EB0062A5D8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				25DD1A6F261973F40062A5D8 /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
