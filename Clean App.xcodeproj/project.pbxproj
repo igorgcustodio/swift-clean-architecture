@@ -118,6 +118,8 @@
 		25D8F815261688200022B848 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8F814261688200022B848 /* LoginPresenterTests.swift */; };
 		25D8F82926168AE40022B848 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8F82826168AE40022B848 /* LoginViewModel.swift */; };
 		25DD1A3D26195FBA0062A5D8 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD1A3C26195FBA0062A5D8 /* LoginPresenter.swift */; };
+		25DD1A51261962AE0062A5D8 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD1A50261962AE0062A5D8 /* AuthenticationSpy.swift */; };
+		25DD1A52261962AE0062A5D8 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD1A50261962AE0062A5D8 /* AuthenticationSpy.swift */; };
 		25E492A825B8D1260030A347 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E492A725B8D1260030A347 /* HttpError.swift */; };
 /* End PBXBuildFile section */
 
@@ -464,6 +466,7 @@
 		25D8F814261688200022B848 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		25D8F82826168AE40022B848 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		25DD1A3C26195FBA0062A5D8 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		25DD1A50261962AE0062A5D8 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		25E492A725B8D1260030A347 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -769,6 +772,7 @@
 		257FFDE225C0B63400453BD2 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				25DD1A50261962AE0062A5D8 /* AuthenticationSpy.swift */,
 				257FFDE325C0B63D00453BD2 /* AddAccountSpy.swift */,
 			);
 			path = UseCases;
@@ -1860,6 +1864,7 @@
 				257FFD8C25C04FA700453BD2 /* AccountModelFactory.swift in Sources */,
 				257FFD9C25C05BED00453BD2 /* TestExtensions.swift in Sources */,
 				257FFDF825C0B71F00453BD2 /* TestFactories.swift in Sources */,
+				25DD1A52261962AE0062A5D8 /* AuthenticationSpy.swift in Sources */,
 				25A8D29E25BF8AC100E7ACEC /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1922,6 +1927,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25DD1A51261962AE0062A5D8 /* AuthenticationSpy.swift in Sources */,
 				25B0100D25CF1DB9005E8742 /* AddAccountSpy.swift in Sources */,
 				25B0102225CF1E29005E8742 /* TestExtensions.swift in Sources */,
 				25286FDD25D4D08300CA8747 /* EmailValidatorSpy.swift in Sources */,
