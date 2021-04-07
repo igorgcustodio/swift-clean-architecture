@@ -66,6 +66,7 @@
 		25818EBB2604213500274636 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */; };
 		25818ECF2604220500274636 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818ECE2604220500274636 /* RemoteAuthentication.swift */; };
 		2584434F261E77C100AD8A63 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584434E261E77C100AD8A63 /* WelcomeRouterTests.swift */; };
+		2584435A261E7AEB00AD8A63 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */; };
 		25A32A63261A7EC30092A7A9 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */; };
 		25A32A77261A81A60092A7A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */; };
 		25A32A93261A85950092A7A9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A32A57261A72630092A7A9 /* Welcome.storyboard */; };
@@ -433,6 +434,7 @@
 		25818EBA2604213500274636 /* RemoteAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationTests.swift; sourceTree = "<group>"; };
 		25818ECE2604220500274636 /* RemoteAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
 		2584434E261E77C100AD8A63 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
+		25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		25A32A57261A72630092A7A9 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -929,6 +931,7 @@
 			children = (
 				25A32A57261A72630092A7A9 /* Welcome.storyboard */,
 				25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */,
+				25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1866,6 +1869,7 @@
 				25A32A77261A81A60092A7A9 /* WelcomeViewController.swift in Sources */,
 				2541396125CCD01B006670B0 /* UIViewControllerExtensions.swift in Sources */,
 				25818E912602F4AF00274636 /* RoundedTextField.swift in Sources */,
+				2584435A261E7AEB00AD8A63 /* WelcomeRouter.swift in Sources */,
 				2541396F25CCD151006670B0 /* Storyboard.swift in Sources */,
 				257FFE6525C0BBC100453BD2 /* SignUpViewController.swift in Sources */,
 				25DD1A99261976F60062A5D8 /* LoginViewController.swift in Sources */,
