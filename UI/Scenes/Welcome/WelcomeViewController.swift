@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, Storyboard {
+public final class WelcomeViewController: UIViewController, Storyboard {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController, Storyboard {
     public var login: (() -> Void)?
     public var signUp: (() -> Void)?
     
-    override func viewDidLoad()  {
+    public override func viewDidLoad()  {
         super.viewDidLoad()
         configure()
     }
