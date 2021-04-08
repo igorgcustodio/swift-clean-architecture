@@ -68,6 +68,7 @@
 		2584434F261E77C100AD8A63 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584434E261E77C100AD8A63 /* WelcomeRouterTests.swift */; };
 		2584435A261E7AEB00AD8A63 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */; };
 		25844365261E804700AD8A63 /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25844364261E804700AD8A63 /* WelcomeControllerFactory.swift */; };
+		2584437A261E819D00AD8A63 /* ValidationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25844379261E819D00AD8A63 /* ValidationBuilder.swift */; };
 		25A32A63261A7EC30092A7A9 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */; };
 		25A32A77261A81A60092A7A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */; };
 		25A32A93261A85950092A7A9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A32A57261A72630092A7A9 /* Welcome.storyboard */; };
@@ -437,6 +438,7 @@
 		2584434E261E77C100AD8A63 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		25844364261E804700AD8A63 /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
+		25844379261E819D00AD8A63 /* ValidationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationBuilder.swift; sourceTree = "<group>"; };
 		25A32A57261A72630092A7A9 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -929,6 +931,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		25844378261E819100AD8A63 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				25844379261E819D00AD8A63 /* ValidationBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		25A32A56261A724C0092A7A9 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
@@ -1148,6 +1158,7 @@
 		25B00F2F25CF10DF005E8742 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				25844378261E819100AD8A63 /* Builders */,
 				25B0105325CF2596005E8742 /* Env */,
 				25B0109925CF355A005E8742 /* Decorators */,
 				25B0103525CF217C005E8742 /* Proxies */,
@@ -1988,6 +1999,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2584437A261E819D00AD8A63 /* ValidationBuilder.swift in Sources */,
 				25818E172602EBFE00274636 /* EmailValidatorAdapterFactory.swift in Sources */,
 				25B0109B25CF3569005E8742 /* MainQueueDispatchDecorator.swift in Sources */,
 				25818DE72602EB5600274636 /* ApiUrlFactory.swift in Sources */,
