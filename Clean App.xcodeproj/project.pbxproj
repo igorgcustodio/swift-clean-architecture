@@ -67,6 +67,7 @@
 		25818ECF2604220500274636 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25818ECE2604220500274636 /* RemoteAuthentication.swift */; };
 		2584434F261E77C100AD8A63 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584434E261E77C100AD8A63 /* WelcomeRouterTests.swift */; };
 		2584435A261E7AEB00AD8A63 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */; };
+		25844365261E804700AD8A63 /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25844364261E804700AD8A63 /* WelcomeControllerFactory.swift */; };
 		25A32A63261A7EC30092A7A9 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */; };
 		25A32A77261A81A60092A7A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */; };
 		25A32A93261A85950092A7A9 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A32A57261A72630092A7A9 /* Welcome.storyboard */; };
@@ -435,6 +436,7 @@
 		25818ECE2604220500274636 /* RemoteAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
 		2584434E261E77C100AD8A63 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		25844359261E7AEB00AD8A63 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		25844364261E804700AD8A63 /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
 		25A32A57261A72630092A7A9 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		25A32A62261A7EC30092A7A9 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		25A32A76261A81A60092A7A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -904,6 +906,7 @@
 			isa = PBXGroup;
 			children = (
 				25DD1B2726197D8B0062A5D8 /* LoginControllerFactory.swift */,
+				25844364261E804700AD8A63 /* WelcomeControllerFactory.swift */,
 				25B00FE525CF1BF2005E8742 /* SignUpControllerFactory.swift */,
 			);
 			path = Controllers;
@@ -1997,6 +2000,7 @@
 				25B0103725CF2190005E8742 /* WeakVarProxy.swift in Sources */,
 				25B00FE625CF1BF2005E8742 /* SignUpControllerFactory.swift in Sources */,
 				25818E3F2602ECFD00274636 /* AlamofireAdapterFactory.swift in Sources */,
+				25844365261E804700AD8A63 /* WelcomeControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
